@@ -18,8 +18,9 @@ classifiers = [
   "Programming Language :: Python :: 3",
 ]
 
-requires-python = ">=3.9"  # py_ver
+requires-python = ">=3.14"  # py_ver
 dependencies = [
+    "fastmcp>=2.14.5",
     "loguru>=0.7.3",
 ]
 
