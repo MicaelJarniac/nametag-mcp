@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.0 (2026-02-09)
+
+### Features
+
+- Port setting
+  ([`95c28c4`](https://github.com/MicaelJarniac/nametag-mcp/commit/95c28c45a9155c528e71c761b61f6fc67d01b531))
+
+
 ## v0.2.0 (2026-02-09)
 
 ### Features
