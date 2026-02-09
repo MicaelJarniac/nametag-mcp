@@ -1,6 +1,6 @@
 [project]
 name = "nametag-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "Nametag MCP server."
 authors = [
   {name = "Micael Jarniac", email = "micael@jarniac.dev"},
