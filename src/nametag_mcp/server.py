@@ -22,4 +22,7 @@ mcp = FastMCP.from_openapi(
 )
 
 if __name__ == "__main__":
-    mcp.run(transport="http")
+    mcp.run(
+        transport="http",
+        port=settings.mcp_port,
+    )

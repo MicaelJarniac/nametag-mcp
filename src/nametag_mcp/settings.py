@@ -12,6 +12,7 @@ class Settings(BaseSettings):
 
     api_url: str = "http://localhost:3000"
     openapi_url: str = "http://localhost:3000/api/openapi.json"
+    mcp_port: int = 8000
 
 
 settings = Settings()
