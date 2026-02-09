@@ -22,6 +22,7 @@ requires-python = ">=3.14"  # py_ver
 dependencies = [
     "fastmcp>=2.14.5",
     "loguru>=0.7.3",
+    "pydantic-settings>=2.12.0",
 ]
 
 [build-system]

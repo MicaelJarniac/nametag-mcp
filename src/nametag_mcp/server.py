@@ -7,16 +7,13 @@ __all__: tuple[str, ...] = ()
 import httpx
 from fastmcp import FastMCP
 
-API_URL = "http://localhost:3000"
+from nametag_mcp.settings import settings
 
 client = httpx.AsyncClient(
-    base_url=API_URL,
-    cookies={
-        "authjs.session-token": "",
-    },
+    base_url=settings.api_url,
 )
 
-openapi_spec = httpx.get(f"{API_URL}/api/openapi.json").json()
+openapi_spec = httpx.get(settings.openapi_url).json()
 
 mcp = FastMCP.from_openapi(
     openapi_spec=openapi_spec,
@@ -25,4 +22,4 @@ mcp = FastMCP.from_openapi(
 )
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="http")
